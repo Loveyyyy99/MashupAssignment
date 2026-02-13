@@ -69,37 +69,6 @@ The system is organized into modular components:
 
 ## Input and Output
 
-### Input Specifications
-
-#### CLI Version
-```bash
-python 102303335.py "Artist Name" 5 30 output.mp3
-
-```
-<img width="1259" height="376" alt="image" src="https://github.com/user-attachments/assets/d6ba51cb-9cb5-4626-9a47-a1838f3e7938" />
-
-**Parameters:**
-- **Artist Name** - Singer name or multiple singers separated by commas
-- **5** - Number of videos to download
-- **30** - Duration per track in seconds
-- **output.mp3** - Output filename
-
-#### Web Version
-
-The web interface accepts the following fields:
-- Singer Name(s)
-- Number of Videos
-- Duration per Track (seconds)
-- Email Address
-
-### Output Specifications
-
-The system produces:
-- Final merged MP3 file (`mashup.mp3`)
-- ZIP archive (`mashup.zip`) for web version
-- Email notification with attached mashup file
-
-#### Example
 
 **Input:**
 
