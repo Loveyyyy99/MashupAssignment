@@ -6,47 +6,26 @@ The Mashup Generator is a Python-based audio processing application that automat
 
 ## Methodology
 
-The Mashup Generator follows a modular pipeline-based approach consisting of six main steps:
+The Mashup Generator follows a structured six-step pipeline approach:
 
-### Step 1: Input Collection
+### Process Flow:
 
-The user provides the following information:
-- Singer name (single or multiple artists)
-- Number of videos to process
-- Duration per track (in seconds)
-- Email address (for web version only)
+1. **Input Collection** - User provides singer name, number of videos, duration, and email address
 
-### Step 2: Video Downloading
+2. **Video Downloading** - System searches YouTube using yt-dlp and downloads specified videos to `cli/downloads/`
 
-- The program uses `yt-dlp` to search YouTube for videos
-- Downloads the specified number of videos for the given artist(s)
-- Files are stored in the `cli/downloads/` directory
+3. **Audio Extraction** - FFmpeg extracts audio and trims each file to user-defined duration, saved in `cli/cut_audios/`
 
-### Step 3: Audio Extraction and Cutting
+4. **Audio Merging** - All audio clips are combined into a single mashup file using FFmpeg, output to `cli/final_output/mashup.mp3`
 
-- `FFmpeg` is used to extract audio from downloaded videos
-- Only the first N seconds (user-defined duration) are retained from each video
-- Each audio clip is re-encoded to ensure proper timestamps
-- Output files are saved in the `cli/cut_audios/` directory
+5. **Email Delivery** - Final mashup is compressed to ZIP format and sent via Gmail SMTP
 
-### Step 4: Audio Merging
+6. **User Feedback** - Web interface displays processing status, completion message, or error notifications
 
-- All clipped MP3 files are merged using FFmpeg
-- Re-encoding is performed to avoid DTS (Decode Time Stamp) errors
-- Final mashup file is saved as `cli/final_output/mashup.mp3`
+<img width="945" height="797" alt="image" src="https://github.com/user-attachments/assets/daae33d0-e751-4f4d-8fb6-420ca9c36011" />
 
-### Step 5: Email Delivery (Web Version)
 
-- The final MP3 file is compressed into a ZIP archive
-- The ZIP file is sent to the user's email using Gmail SMTP
-- Environment variables are used for secure credential management
-
-### Step 6: UI Feedback
-
-The web interface provides real-time feedback:
-- Loading spinner during processing
-- Success message upon completion
-- Error messages if any issues occur
+*Figure 1: Mashup Generator Processing Pipeline*
 
 ## Project Description
 
