@@ -13,8 +13,8 @@ from mashup_core import clear_folders, download_videos, cut_audios, merge_audios
 app = Flask(__name__)
 
 # 🔐 Replace with your Gmail + App Password
-SENDER_EMAIL = "lovepreetbhatia178@gmail.com"
-APP_PASSWORD = "eebh hecq nfke uomo"
+SENDER_EMAIL = os.environ.get("SENDER_EMAIL")
+APP_PASSWORD = os.environ.get("APP_PASSWORD")
 
 
 @app.route("/")
