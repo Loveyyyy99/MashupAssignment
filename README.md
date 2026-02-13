@@ -8,7 +8,7 @@ The Mashup Generator is a Python-based audio processing application that automat
 
 The Mashup Generator follows a structured six-step pipeline approach:
 
-### Process Flow:
+### Process Flow
 
 1. **Input Collection** - User provides singer name, number of videos, duration, and email address
 
@@ -22,10 +22,10 @@ The Mashup Generator follows a structured six-step pipeline approach:
 
 6. **User Feedback** - Web interface displays processing status, completion message, or error notifications
 
-<img width="945" height="797" alt="image" src="https://github.com/user-attachments/assets/daae33d0-e751-4f4d-8fb6-420ca9c36011" />
-
-
-*Figure 1: Mashup Generator Processing Pipeline*
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/daae33d0-e751-4f4d-8fb6-420ca9c36011" alt="Methodology Flowchart" width="700"/>
+</p>
+<p align="center"><em>Figure 1: Mashup Generator Processing Pipeline</em></p>
 
 ## Project Description
 
@@ -48,36 +48,44 @@ The system is organized into modular components:
 
 ## Input and Output
 
+### Input
 
-**Input:**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/10e55c7b-1671-4d63-98f7-8974e47fcb6e" alt="Input Interface" width="700"/>
+</p>
+<p align="center"><em>Web Interface Input Form</em></p>
 
-<img width="852" height="771" alt="image" src="https://github.com/user-attachments/assets/10e55c7b-1671-4d63-98f7-8974e47fcb6e" />
+### Output
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f748cd5e-9b5c-4875-a3c1-ff73e9ff494f" alt="Output File" width="700"/>
+</p>
+<p align="center"><em>Generated Mashup Output</em></p>
 
-
-**Output:**
-
-<img width="825" height="347" alt="image" src="https://github.com/user-attachments/assets/f748cd5e-9b5c-4875-a3c1-ff73e9ff494f" />
-<img width="1405" height="453" alt="image" src="https://github.com/user-attachments/assets/42431260-5231-44fe-b5f7-e9ef0d0cec61" />
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/42431260-5231-44fe-b5f7-e9ef0d0cec61" alt="Email Output" width="700"/>
+</p>
+<p align="center"><em>Email Delivery Confirmation</em></p>
 
 ## Screenshots of the Interface
 
-1. **Figure 1**: Web Interface - Input Form
+### Figure 1: Web Interface - Input Form
 
-   
- <img width="852" height="771" alt="image" src="https://github.com/user-attachments/assets/4543b7cf-df0a-47c6-ac52-db1710995771" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4543b7cf-df0a-47c6-ac52-db1710995771" alt="Web Interface Input Form" width="700"/>
+</p>
 
-2. **Figure 2**: Processing Screen with Loading Indicator
+### Figure 2: Processing Screen with Loading Indicator
 
-   
-   <img width="852" height="771" alt="image" src="https://github.com/user-attachments/assets/45a6e32c-7044-4346-bd02-ed650b006b05" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/45a6e32c-7044-4346-bd02-ed650b006b05" alt="Processing Screen" width="700"/>
+</p>
 
-3. **Figure 3**: Success Message after Email Sent
+### Figure 3: Success Message after Email Sent
 
-   
-   <img width="852" height="771" alt="image" src="https://github.com/user-attachments/assets/78b208b5-0a1b-4799-8a3d-9b5d55638545" />
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/78b208b5-0a1b-4799-8a3d-9b5d55638545" alt="Success Message" width="700"/>
+</p>
 
 ## Installation and Setup
 
@@ -88,20 +96,30 @@ The system is organized into modular components:
 - Gmail account for email functionality (web version)
 
 ### Required Python Packages
+
 ```bash
 pip install yt-dlp
 pip install flask
-pip install python
+pip install python-dotenv
 ```
 
 ## Usage
 
 ### Command Line Interface
+
 ```bash
 python 102303335.py "<Artist Name>" <num_videos> <duration> <output_file>
 ```
-<img width="1259" height="376" alt="image" src="https://github.com/user-attachments/assets/d6ba51cb-9cb5-4626-9a47-a1838f3e7938" />
-<img width="1321" height="500" alt="image" src="https://github.com/user-attachments/assets/98d8f94c-1269-4313-8c0f-ce6f01060f5b" />
+
+#### CLI Screenshots
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d6ba51cb-9cb5-4626-9a47-a1838f3e7938" alt="CLI Usage" width="700"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/98d8f94c-1269-4313-8c0f-ce6f01060f5b" alt="CLI Output" width="700"/>
+</p>
 
 ### Web Interface
 
@@ -113,6 +131,7 @@ python 102303335.py "<Artist Name>" <num_videos> <duration> <output_file>
 6. Check your email for the mashup file
 
 ## Project Structure
+
 ```
 mashup-generator/
 ├── mashup_core.py
