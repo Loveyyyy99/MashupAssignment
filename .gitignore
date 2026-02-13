@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+cli/downloads/
+cli/cut_audios/
+cli/final_output/
+*.mp3
+*.zip
+.env
