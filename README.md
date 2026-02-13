@@ -25,7 +25,7 @@ The Mashup Generator follows a structured six-step pipeline approach:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/daae33d0-e751-4f4d-8fb6-420ca9c36011" alt="Methodology Flowchart" width="700"/>
 </p>
-<p align="center"><em>Figure 1: Mashup Generator Processing Pipeline</em></p>
+<p align="center"><em> Mashup Generator Processing Pipeline</em></p>
 
 ## Project Description
 
