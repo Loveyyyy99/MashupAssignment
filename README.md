@@ -74,7 +74,9 @@ The system is organized into modular components:
 #### CLI Version
 ```bash
 python 102303335.py "Artist Name" 5 30 output.mp3
+
 ```
+<img width="1259" height="376" alt="image" src="https://github.com/user-attachments/assets/d6ba51cb-9cb5-4626-9a47-a1838f3e7938" />
 
 **Parameters:**
 - **Artist Name** - Singer name or multiple singers separated by commas
@@ -100,24 +102,33 @@ The system produces:
 #### Example
 
 **Input:**
-<img width="917" height="626" alt="image" src="https://github.com/user-attachments/assets/18f30a3e-1738-48b9-8d34-64c58cd16894" />
+
+<img width="852" height="771" alt="image" src="https://github.com/user-attachments/assets/10e55c7b-1671-4d63-98f7-8974e47fcb6e" />
+
 
 
 **Output:**
+
 <img width="825" height="347" alt="image" src="https://github.com/user-attachments/assets/f748cd5e-9b5c-4875-a3c1-ff73e9ff494f" />
 <img width="1405" height="453" alt="image" src="https://github.com/user-attachments/assets/42431260-5231-44fe-b5f7-e9ef0d0cec61" />
 
 
-## Screenshots
+## Screenshots of the Interface
 
 1. **Figure 1**: Web Interface - Input Form
+
+   
  <img width="852" height="771" alt="image" src="https://github.com/user-attachments/assets/4543b7cf-df0a-47c6-ac52-db1710995771" />
 
 2. **Figure 2**: Processing Screen with Loading Indicator
-   <img width="592" height="674" alt="image" src="https://github.com/user-attachments/assets/45a6e32c-7044-4346-bd02-ed650b006b05" />
+
+   
+   <img width="852" height="771" alt="image" src="https://github.com/user-attachments/assets/45a6e32c-7044-4346-bd02-ed650b006b05" />
 
 3. **Figure 3**: Success Message after Email Sent
-   <img width="798" height="785" alt="image" src="https://github.com/user-attachments/assets/78b208b5-0a1b-4799-8a3d-9b5d55638545" />
+
+   
+   <img width="852" height="771" alt="image" src="https://github.com/user-attachments/assets/78b208b5-0a1b-4799-8a3d-9b5d55638545" />
 
 
 ## Installation and Setup
@@ -140,10 +151,9 @@ pip install python
 ### Command Line Interface
 ```bash
 python 102303335.py "<Artist Name>" <num_videos> <duration> <output_file>
+```
 <img width="1259" height="376" alt="image" src="https://github.com/user-attachments/assets/d6ba51cb-9cb5-4626-9a47-a1838f3e7938" />
 <img width="1321" height="500" alt="image" src="https://github.com/user-attachments/assets/98d8f94c-1269-4313-8c0f-ce6f01060f5b" />
-
-```
 
 ### Web Interface
 
